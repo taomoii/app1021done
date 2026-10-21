@@ -1,0 +1,595 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+
+    <!-- 載入追蹤碼js -->
+    <script>
+        let cacheID = new Date().getMilliseconds();
+        let Login_InternalScript = document.createElement('script');
+        Login_InternalScript.src = `https://event.kgi.com.tw/news/event/commonResources/js/trackingCode.js?uid=` + cacheID;
+        document.head.appendChild(Login_InternalScript);
+    </script>
+
+    <!-- <link rel="preload" href="images/reel2.webp" as="image" media="(min-width: 768px)" /> -->
+    <link rel="preload" href="images/bannerTit.png" as="image" />
+    <link rel="preload" href="images/kv2.png" as="image" />
+    <link rel="preload" href="images/kv1.png" as="image" />
+    <link rel="preload" href="images/kv-text.png" as="image" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#081c43" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link href="https://www.kgi.com.tw/media/assets/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="https://www.kgi.com.tw/media/assets/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="https://www.kgi.com.tw/media/assets/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <title>隨身e策略APP使用攻略－凱基證券</title>
+    <meta property="og:title" content="隨身e策略APP使用攻略－凱基證券" />
+    <meta name="twitter:title" content="隨身e策略APP使用攻略－凱基證券" />
+
+    <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "name": "凱基證券",
+                "url": "https://www.kgi.com.tw/",
+                "logo": "https://www.kgi.com.tw/zh-tw/-/media/images/kgis/header/logo-kgis.svg",
+                "mainEntityOfPage":{
+                    "@type": "WebPage",
+                    "@id": "https://event.kgi.com.tw/news/event/app/tutorial/index.html"
+                },
+                "image":[
+                    "https://event.kgi.com.tw/news/event/app/tutorial/images/fb.jpg?v=260717"
+                ]
+            }
+        </script>
+
+    <script type="application/ld+json">
+            {
+                "@context": "http://schema.org", 
+                "@type": "BreadcrumbList", 
+                "itemListElement": [{ 
+                    "@type": "ListItem", 
+                    "position": 1, 
+                    "item": " https://www.kgi.com.tw/", 
+                    "name": "首頁" 
+                } ,
+                { 
+                    "@type": "ListItem", 
+                    "position": 2, 
+                    "item": "https://event.kgi.com.tw/news/event/app/tutorial/index.html",
+                    "name": "隨身e策略APP使用攻略－凱基證券" 
+                } ]
+            }
+        </script>
+
+    <meta property="og:type" content="website" />
+    <!-- <meta property="fb:app_id" content="xxxxxxxx" /> -->
+    <meta name="description" content="解答您的使用疑問，APP攻略協助您成為投資高手！" />
+    <meta property="og:description" content="解答您的使用疑問，APP攻略協助您成為投資高手！" />
+    <meta name="twitter:description" content="解答您的使用疑問，APP攻略協助您成為投資高手！" />
+    <meta property="og:url" content="https://event.kgi.com.tw/news/event/app/tutorial/index.html" />
+    <link rel="canonical" href="https://event.kgi.com.tw/news/event/app/tutorial/index.html" />
+    <meta property="og:image" content="https://event.kgi.com.tw/news/event/app/tutorial/images/fb.jpg?v=260717" />
+    <meta name="twitter:image" content="https://event.kgi.com.tw/news/event/app/tutorial/images/fb.jpg?v=260717" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- <meta name="twitter:site" content="@" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link href="css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=20260716" />
+
+    <!-- google font start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,700,900&display=swap" rel="stylesheet"> -->
+    <!-- google font end -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="js/vue-v2.js"></script>
+    <script src="js/jquery-v3.4.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/vue-scrollto.min.js"></script>
+    <!-- <script src="js/httpVueLoader.js"></script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 數字遞增動畫 -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/countup@1.8.2/dist/countUp.min.js"></script> -->
+
+    <!-- iOS 和 Android 的智能應用橫幅 -->
+    <!-- <meta name="apple-itunes-app" content="app-id=1508279002">
+        <meta name="google-play-app" content="app-id=com.sice_app">
+        <link href="css/jquery.smartbanner.css" rel="stylesheet">
+        <script src="js/jquery.smartbanner.js"></script>
+        <script type="text/javascript">
+            $(function() { $.smartbanner() } )
+        </script>
+        <style>
+            #smartbanner {position: relative!important;} #smartbanner .sb-info > span:last-of-type {display: none;} #smartbanner.android .sb-button span {display: none;} #smartbanner.android {border-top-color: #005598;}
+            .sb-button:before {content: '打開'; display: block; line-height: 28px; background: #005598; color: #fff;}
+        </style> -->
+
+    <!-- scrollMagic + tweenMax -->
+    <script src="js/ScrollMagic-v2.0.7.min.js"></script>
+    <script src="js/debug.addIndicators-v2.0.7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="js/animation.gsap.js"></script>
+
+</head>
+
+<body>
+
+    <div id="content" v-cloak>
+
+        <header-area></header-area>
+
+        <!-- main -->
+        <article class="main">
+
+            <div class="banner">
+                <div class="banner-scrollIcon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div>scroll</div>
+                </div>
+                <div class="banner-container">
+                    <div class="banner-content">
+                        <h1 class="banner-tit" title="隨身e策略使用手冊">
+                            <div class="banner-tit-1">
+                                隨身e策略 <br /><span>使用手冊</span>
+                            </div>
+                            <div class="banner-kv-phone">
+                                <img src="images/iphone.png" alt="" class="">
+                            </div>
+                        </h1>
+                    </div>
+                    <!-- 桌機 -->
+                    <div class="banner-kv kv-marquee">
+                        <div class="marquee-track">
+                            <div class="marquee-col col-left">
+                                <img src="images/kv1.svg" alt="" class="kv-img">
+                                <img src="images/kv1.svg" alt="" class="kv-img">
+                                <img src="images/kv1.svg" alt="" class="kv-img">
+                            </div>
+
+                            <div class="marquee-col col-right">
+                                <img src="images/kv2.svg" alt="" class="kv-img">
+                                <img src="images/kv2.svg" alt="" class="kv-img">
+                                <img src="images/kv2.svg" alt="" class="kv-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <search-bar></search-bar>
+
+            <share-link></share-link>
+
+            <div class="main-content">
+                <div id="Area_push"></div>
+                <section class="item Area_push" aria-label="APP 改版功能">
+                    <link rel="stylesheet" href="css/area-push.css?v=20261021">
+                    <script defer src="js/area-push.js?v=20261021"></script>
+                    <div class="container">
+                        <h2 class="tit-type5" title="隨身e策略APP改版新裝上線" data-aos="fade-up" data-aos-once="true">
+                            隨身e策略APP<span class="dottt">，</span><br class="mobile-br">改版新裝上線<span
+                                class="sub-text">選擇凱基，開始累積！從第一筆，累積一輩子</span></h2>
+                        <div class="Area_push_carousel" role="region" aria-roledescription="輪播" aria-label="APP 功能介紹">
+                        <div class="Area_push_viewport">
+                        <div class="Area_push_list" id="area-push-cards">
+                            <a href="https://event.kgi.com.tw/news/event/app/tutorial/pdf/watchlist.pdf" target="_blank"
+                                class="more">
+                                <div class="card">
+                                    <div>
+                                        <div class="card-header">
+                                            <h2 class="card-tag">自選<span class="Area_push_new">NEW</span></h2>
+                                            <span class="card-arrow">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <p class="card-title">我自選股＋專家策略 一站掌握</p>
+                                        <p class="card-desc">投資機會這麼多，下一檔，該看哪一檔？
+                                            看自己的股票，也看專家怎麼選。全新升級「自選」，行情、策略、交易工具一次整合，快速掌握市場動向，投資機會不漏接。</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://event.kgi.com.tw/news/event/app/tutorial/pdf/investment.pdf"
+                                target="_blank" class="more">
+                                <div class="card">
+                                    <div>
+                                        <div class="card-header">
+                                            <h2 class="card-tag">定期定額<span class="Area_push_new">NEW</span></h2>
+                                            <span class="card-arrow">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <p class="card-title">智慧加減碼 逢低加速累積財富</p>
+                                        <p class="card-desc">全新台美股定期定額下單體驗，月月領配息試算、找標的、看帳務輕鬆搞定，自製微笑曲線資產累積更靈活。</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://event.kgi.com.tw/news/event/app/tutorial/pdf/me.pdf" target="_blank"
+                                class="more">
+                                <div class="card">
+                                    <div>
+                                        <div class="card-header">
+                                            <h2 class="card-tag">我的</h2>
+                                            <span class="card-arrow">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <p class="card-title">我的首頁，我做主</p>
+                                        <p class="card-desc">你最在意的投資報酬，你最關心的市場重要消息，都可以依照自己的心意調整功能排序，你的APP就該順應你的喜好！</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="https://event.kgi.com.tw/news/event/app/tutorial/pdf/stock.pdf" target="_blank"
+                                class="more">
+                                <div class="card">
+                                    <div>
+                                        <div class="card-header">
+                                            <h2 class="card-tag">選股</h2>
+                                            <span class="card-arrow">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <p class="card-title">行情策略，資訊不漏接</p>
+                                        <p class="card-desc">盤中盤後重要排行榜，策略選股搭配歷史回測，輕鬆找到理想標的！</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="https://event.kgi.com.tw/news/event/app/tutorial/pdf/account.pdf" target="_blank"
+                                class="more">
+                                <div class="card">
+                                    <div>
+                                        <div class="card-header">
+                                            <h2 class="card-tag">帳務</h2>
+                                            <span class="card-arrow">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <p class="card-title">資產變化，一手掌握</p>
+                                        <p class="card-desc">台股、海外股、財管資產總覽一目了然，每日資產變化視覺呈現，累積看得見！</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="https://event.kgi.com.tw/news/event/app/tutorial/pdf/more.pdf" target="_blank"
+                                class="more">
+                                <div class="card">
+                                    <div>
+                                        <div class="card-header">
+                                            <h2 class="card-tag">更多</h2>
+                                            <span class="card-arrow">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <p class="card-title">更多服務，更多便利</p>
+                                        <p class="card-desc">
+                                            整合個人資料管理、所有開戶帳戶查詢及全方位客服中心，讓您輕鬆管理金融生活。所有功能分類更清楚，更好找，輕鬆搞定投資，把生活還給自己。</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                        </div>
+                        <button class="Area_push_nav Area_push_prev" type="button" aria-label="上一頁" aria-controls="area-push-cards" disabled><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M26 16H6m9-9-9 9 9 9"/></svg></button>
+                        <button class="Area_push_nav Area_push_next" type="button" aria-label="下一頁" aria-controls="area-push-cards"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 16h20m-9-9 9 9-9 9"/></svg></button>
+                        <div class="Area_push_dots" aria-label="選擇輪播頁面">
+                            <button type="button" aria-label="第 1 頁，共 2 頁" aria-current="true"></button>
+                            <button type="button" aria-label="第 2 頁，共 2 頁"></button>
+                        </div>
+                        <span class="Area_push_status" aria-live="polite" aria-atomic="true">第 1 頁，共 2 頁</span>
+                        </div>
+                    </div>
+                </section>
+
+
+                <div id="strategyList"></div>
+
+                <section class="item strategyList">
+
+                    <div class="main-content-tattoo">
+                        <div>APP</div>
+                        <div>使用攻略</div>
+                    </div>
+                    <div class="container">
+                        <ul class="strategyList-item">
+                            <li data-aos="fade-up">
+                                <img src="images/user1.png" alt="入門版功能" class="strategyList-item-img">
+                                <h3 class="strategyList-item-tit" title="入門版">
+                                    入門版
+                                </h3>
+                                <p class="strategyList-item-con" title="">
+                                    投資第一步，從這裡開始累積<br>三分鐘上手你的主場
+                                </p>
+                                <div class="strategyList-item-info">
+                                    <div class="strategyList-item-info-item" v-for="item in strategyListLv1">
+                                        <h4 class="strategyList-item-info-item-tit" v-if="item.tit != ''"
+                                            :title="item.tit">
+                                            {{item.tit}}
+                                        </h4>
+                                        <ul>
+                                            <li v-for="item2 in item.list">
+                                                <a :href="item2.link + '.html'" :title="item2.tit">
+                                                    {{item2.tit}}
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="100">
+                                <img src="images/user2.png" alt="進階版功能" class="strategyList-item-img">
+                                <h3 class="strategyList-item-tit" title="進階版">
+                                    進階版
+                                </h3>
+                                <p class="strategyList-item-con" title="">
+                                    有主張的投資，從數據開始<br>建立你的投資邏輯
+                                </p>
+                                <div class="strategyList-item-info">
+                                    <div class="strategyList-item-info-item" v-for="item in strategyListLv2">
+                                        <h4 class="strategyList-item-info-item-tit" v-if="item.tit != ''"
+                                            :title="item.tit">
+                                            {{item.tit}}
+                                        </h4>
+                                        <ul>
+                                            <li v-for="item2 in item.list">
+                                                <a :href="item2.link + '.html'" :title="item2.tit">
+                                                    {{item2.tit}}
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="200">
+                                <img src="images/user3.png" alt="其他更多" class="strategyList-item-img">
+                                <h3 class="strategyList-item-tit" title="其他更多">
+                                    其他更多
+                                </h3>
+                                <p class="strategyList-item-con" title="">
+                                    銀證整合，主控你的全局<br>資產調度一站到位，累積更有餘裕
+                                </p>
+                                <div class="strategyList-item-info">
+                                    <div class="strategyList-item-info-item" v-for="item in strategyListOther">
+                                        <h4 class="strategyList-item-info-item-tit" v-if="item.tit != ''"
+                                            :title="item.tit">
+                                            {{item.tit}}
+                                        </h4>
+                                        <ul>
+                                            <li v-for="item2 in item.list">
+                                                <a :href="item2.link + '.html'" :title="item2.tit">
+                                                    {{item2.tit}}
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+
+        </article>
+
+        <footer-area></footer-area>
+
+        <!-- <modal ref="warning" :can-close="false" class="md">
+                <slot slot="infoArea">
+                    xxxx
+                </slot>
+            </modal> -->
+
+        <modal ref="copyUrlSuccess" :can-close="true" class="md">
+            <slot slot="infoArea">
+                <div class="tit-type1 margin-bottom-5 margin-top-15">
+                    <i class="fa-solid fa-circle-check text-green"></i>
+                </div>
+                <p class="text-center margin-top-5">
+                    <b>複製成功</b>
+                </p>
+            </slot>
+        </modal>
+
+    </div>
+
+    <!-- 桌機手機的輪播設定-->
+    <script>
+        // ====== 桌機版（寬度 > 767）======
+        if (window.innerWidth > 767) {
+            const cols = document.querySelectorAll('.banner-container .kv-marquee .marquee-col');
+
+            cols.forEach(col => {
+                const imgs = col.querySelectorAll('img.kv-img');
+                imgs.forEach(img => col.appendChild(img.cloneNode(true)));
+            });
+
+            const allImgs = Array.from(
+                document.querySelectorAll('.banner-container .kv-marquee .marquee-col img.kv-img')
+            );
+
+            function waitForImages(imgs) {
+                return Promise.all(imgs.map(img => {
+                    if (img.complete) return Promise.resolve();
+                    return new Promise(resolve => img.addEventListener('load', resolve, { once: true }));
+                }));
+            }
+
+            function applyDesktopMarqueeHeight() {
+                const colLeft = document.querySelector('.banner-container .kv-marquee .col-left');
+                const colRight = document.querySelector('.banner-container .kv-marquee .col-right');
+
+                function getHalfHeight(col) {
+                    const imgs = col.querySelectorAll('img.kv-img');
+                    const half = imgs.length / 2;
+                    let total = 0;
+                    for (let i = 0; i < half; i++) {
+                        total += imgs[i].getBoundingClientRect().height;
+                    }
+                    return total;
+                }
+
+                const leftHeight = getHalfHeight(colLeft);
+                const rightHeight = getHalfHeight(colRight);
+
+                const style = document.getElementById('marquee-style-desktop') || document.createElement('style');
+                style.id = 'marquee-style-desktop';
+                style.textContent = `
+            @media (min-width: 768px) {
+                @keyframes marquee-up-flex-precise {
+                    0%   { transform: translate3d(0, 0, 0); }
+                    100% { transform: translate3d(0, -${leftHeight}px, 0); }
+                }
+                @keyframes marquee-down-flex-precise {
+                    0%   { transform: translate3d(0, -${rightHeight}px, 0); }
+                    100% { transform: translate3d(0, 0, 0); }
+                }
+                .banner-container .kv-marquee .col-left  { animation: marquee-up-flex-precise 25s linear infinite; }
+                .banner-container .kv-marquee .col-right { animation: marquee-down-flex-precise 25s linear infinite; }
+            }
+            `;
+                document.head.appendChild(style);
+            }
+
+            waitForImages(allImgs).then(applyDesktopMarqueeHeight);
+        }
+
+        // ====== 手機版（寬度 <= 767）======
+        if (window.innerWidth <= 767) {
+            const track = document.querySelector('.banner-container .kv-marquee .marquee-track');
+            const originalCols = Array.from(track.querySelectorAll('.marquee-col'));
+
+            // 內容變兩倍 動畫無縫循環
+            originalCols.forEach(col => {
+                const clone = col.cloneNode(true);
+                track.appendChild(clone);
+            });
+
+            // 手機版圖片這裡改
+            const mobileImages = [
+                'images/kv_sp1.png',
+                'images/kv_sp2.png',
+                'images/kv_sp3.png',
+                'images/kv_sp4.png'
+            ];
+            const allImgs = track.querySelectorAll('img.kv-img');
+            allImgs.forEach((img, index) => {
+                img.src = mobileImages[index % mobileImages.length];
+            });
+
+
+            function applyMobileMarqueeWidth() {
+                let setWidth = track.scrollWidth / 2;
+
+                if (!setWidth || setWidth < 10) {
+                    setWidth = 728;
+                }
+
+                const style = document.getElementById('marquee-style-mobile') || document.createElement('style');
+                style.id = 'marquee-style-mobile';
+                style.textContent = `
+            @media (max-width: 767px) {
+                @keyframes marquee-horizontal-sp-precise {
+                    0%   { transform: translate3d(0, 0, 0); }
+                    100% { transform: translate3d(-${setWidth}px, 0, 0); }
+                }
+                .banner-container .kv-marquee .marquee-track {
+                    animation: marquee-horizontal-sp-precise 25s linear infinite;
+                }
+            }
+            `;
+                document.head.appendChild(style);
+            }
+
+            requestAnimationFrame(() => {
+                requestAnimationFrame(applyMobileMarqueeWidth);
+            });
+        }
+
+        // ====== 螢幕尺寸跨越手機/桌機門檻時重新整理 ======
+        let lastWidth = window.innerWidth;
+        window.addEventListener('resize', function () {
+            const currentWidth = window.innerWidth;
+            if ((lastWidth <= 767 && currentWidth > 767) || (lastWidth > 767 && currentWidth <= 767)) {
+                location.reload();
+            }
+            lastWidth = currentWidth;
+        });
+    </script>
+
+    <script>
+        var pageInfo = {
+            data() {
+                return {
+                    pageName: 'index',
+                }
+            }
+        }
+    </script>
+    <script src="js/main.js?v=20260625"></script>
+
+</body>
+
+</html>
