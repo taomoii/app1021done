@@ -17,11 +17,11 @@
 
 .Area_push .Area_push_list {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(var(--area-push-columns, 3), minmax(0, 1fr));
     grid-template-rows: repeat(2, 1fr);
     grid-auto-flow: column;
     gap: 28px;
-    width: calc(150% + 14px);
+    width: var(--area-push-track-width, calc(150% + 14px));
     max-width: none;
     transition: transform 0.4s ease;
 }
@@ -264,4 +264,60 @@
     .Area_push .Area_push_list>a {
         transition: none;
     }
+}
+/* Non-interactive filler appears last only when the number of feature cards is odd. */
+.Area_push .Area_push_placeholder {
+    min-width: 0;
+    opacity: .65;
+    transition: opacity .4s ease;
+}
+.Area_push .Area_push_placeholder.is-visible { opacity: 1; }
+.Area_push .Area_push_list .Area_push_locked {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #D2E8FC;
+    color: #9EC6EA;
+    text-align: center;
+}
+.Area_push .Area_push_locked .Area_push_locked_copy {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+.Area_push .Area_push_locked h2 {
+    margin: 0 0 8px;
+    color: inherit;
+    font-size: clamp(24px, 2.5vw, 36px);
+    font-weight: 700;
+    line-height: 1.4;
+}
+.Area_push .Area_push_locked p {
+    margin: 0;
+    color: inherit;
+    font-size: clamp(18px, 1.7vw, 24px);
+    font-weight: 700;
+    line-height: 1.5;
+}
+.Area_push .Area_push_locked .Area_push_lock {
+    position: absolute;
+    right: -12px;
+    bottom: -8px;
+    width: 25%;
+    max-width: 120px;
+    height: auto;
+    pointer-events: none;
+}
+@media (max-width: 1024px) {
+    .Area_push .Area_push_placeholder { opacity: 1; transition: none; }
+}
+@media (max-width: 767px) {
+    .Area_push .Area_push_list .Area_push_locked { min-height: 185px; }
+    .Area_push .Area_push_locked h2 { font-size: 28px; }
+    .Area_push .Area_push_locked p { font-size: 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .Area_push .Area_push_placeholder { transition: none; }
 }
